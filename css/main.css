@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 130%;
+}
+.section-form{
+    width: 100%;
+    background-color:#E5E5E5;
+}
+.container {
+	max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container-flex {
+	display: flex;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.order-form_right{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 40px;
+    background: linear-gradient(180deg, #428A60 0%, #35734F 100%);
+    overflow: hidden;
+}
+
+.product_text{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.product_class{
+    text-transform: uppercase;
+}
+.product_img{
+    width: 465px;
+    height: 255px; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.product_img-container{
+    border-radius: 50%;
+    background:#428A60;
+    width: 398px;
+    height: 398px;
+    position: relative;
+}
+.half-arc{
+    display: block;
+    position: absolute;
+    top: -69%;
+    left: 55%;
+}
+.half-arc:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 688px;
+    height: 688px;  
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #428A60;
+    border-bottom: 20px solid transparent;
+    -moz-border-radius: 50%;
+         border-radius:50%;
+
+    transform: rotate(-90deg);
+}
+.order-form_left{
+    width: 50%;
+    background-color: white;   
+}
+.order-form{
+    display: flex;
+    flex-direction: column; 
+}
+.order-form_title{
+    background: #F8F8F8;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 130%;
+    text-align: center;
+    color: #212121;
+    padding: 29px 100px;
+    margin: 0;
+}
+.title_break{
+    display: block;
+    text-align: center;
+}
+.order-form_body{
+    max-width: 320px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+.order-form_label{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #212121;
+    margin: 10px 0px; 
+    width: 100%
+}
+.order-form_label--green{
+    color:#428A60;
+}
+.order-form_input{
+    padding: 16px 0 16px 20px;
+    width: 320px;
+    height: 50px;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.order-form_input__tel{
+    width: 180px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.btn{
+    padding: 12px 20px;
+    width: 320px;
+    height: 42px;
+    background: #428A60;
+    border-radius: 5px;   
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+.order-form_btn {
+	font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+}
+.order-form_btn:hover{
+    background: #35734F;
+}
+.btn-container{
+    position: relative;
+    margin-bottom: 28px;
+}
+.btn_img{
+    position: absolute;
+    width: 18px;
+    height: 12px;
+    top: 36%;
+    left: 60%;
+    z-index: 100;   
+}
+
+.select {
+	margin: 0 auto;
+	position: relative;
+	width: 117px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #212121;
+}
+.select-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.select.is-active .select__body{
+	display: block;
+}
+
+.select__header {
+	border: 1px solid #ccc;
+	cursor: pointer;
+	display: flex;
+    background: #F8F8F8;
+    border: 1px solid #E4E4E4;
+    border-radius: 5px;
+    height: 50px;
+    align-items: center;
+}
+.select__current-container{
+    
+    padding: 8px;
+}
+.select__current-container img{
+    margin-left: 10px;
+}
+.select__item img{
+    margin-left: 10px;
+}
+.select__icon {
+	align-items: center;
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	height: 40px;
+	margin-left: auto;
+	text-align: center;
+	width: 20px;
+}
+
+
+.select__body {
+	border: 1px solid #cccccc;
+	border-top: 0;
+	display: none;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+    background: white;
+    z-index: 20
+}
+.select__item {
+	cursor: pointer;
+	padding: 8px;
+}
+
+.select__item:hover {
+	background-color: #f2f2f2;
+}
+.order-form_footer{
+    display: none;
+}
+
+@media (max-width: 576px){
+    .container {
+        max-width: 576px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container-flex {
+        display: flex;
+        flex-direction: column;
+    } 
+    .order-form_right, .order-form_left{
+        width: 100%;
+        background: white;
+    }
+    .title_break{
+        display: inline;
+    }
+    .half-arc:after, .half-arc{
+        display: none;
+    }
+    .product_text{
+        color: #212121;
+        width: 50%;
+    }
+    .product_class{
+        text-align: right;
+        font-weight: bold;
+    }
+    .order-form_right{
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .product_img-container{
+        order: 2;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .product_img{
+        width: 365px;
+        height: auto;
+    }
+    .order-form_title{
+        background: white;
+        padding: 29px 50px
+    }
+    .order-form_footer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 80px;
+        background-color: #F8F8F8;
+    }
+    .order-form_link{
+        text-decoration: none;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 130%;
+        color: #212121;
+    }
+}
+@media (max-width: 450px){
+    .container {
+        max-width: 450px;
+    }
+    .product_img-container{
+        order: 2;
+        width: 202px;
+        height: 202px;
+        text-align: center;
+    }
+    .product_img{
+        width: 223px;
+        height: auto;
+        top: 45px;
+    }
+    .order-form_body{
+        padding: 0 20px;
+    }
+    .order-form_input{
+        width: 280px;
+    }
+    .order-form_title{
+        background: white;
+    }
+    .order-form_input__tel{
+        width: 174px;
+    }
+    .select {
+        width: 96px;
+    }
+.btn {
+
+    width: 280px;
+}
+
+}
